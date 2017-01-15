@@ -18,6 +18,7 @@ Described [here](https://rwweb.org).
 Building and running this demo is currently a bit of a hassle. The setup consists of two containers: this app itself, and a [`pywb-webrecorder`](https://github.com/Treora/pywb-webrecorder/tree/webmemex) instance, which is used to proxy viewed webpages while inserting some extra code into them to detect and report link clicks (because the application should open clicked links in a new iframe).
 
 To run things yourself:
+
 1. Get [Docker](http://docker.com) and [Node/NPM][Node].
 2. Clone and run `pywb-webrecorder` (`make rebuild start`, or something).
 3. Clone and run `webmemex` (`make build run`). Then visit `localhost:8086` in your browser.
